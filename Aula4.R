@@ -31,3 +31,10 @@ prev <- predict(mod, newdata=teste)
 cbind(prev, teste$PIB, prev - teste$PIB)
 sse<-sum((prev - teste$PIB)^2)
 
+#RLM + Dummies
+mod <- lm(PIB~BRL+BRP+D2+D5+D6+D7,data=treino)
+summary(mod)
+prev <- predict(mod, newdata=teste)
+cbind(prev, teste$PIB, prev - teste$PIB)
+sse<-sum((prev - teste$PIB)^2)
+
