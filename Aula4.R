@@ -51,3 +51,4 @@ sse<-sum((prev - teste$PIB)^2)
 #Chance de sobrevivência do disastre, exercício para essa semana
 #Survived variável base tranin
 #Na base teste não existe a tabela survied
+#Regressão linear
